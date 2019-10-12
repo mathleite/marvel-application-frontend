@@ -1,6 +1,8 @@
-import CharactersWelcomeView from './Welcome.view';
+import WelcomeView from './Welcome.view.vue';
+
+export const INITIAL_APP_ROUTE = '/';
 
 export default {
-  path: '/',
-  component: CharactersWelcomeView,
+  path: INITIAL_APP_ROUTE,
+  component: WelcomeView,
 };
