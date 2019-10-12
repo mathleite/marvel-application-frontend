@@ -11,6 +11,6 @@ routeLoader.keys().forEach((routeFile) => {
 });
 
 export default new Router({
-  routes: routes,
+  routes,
   mode: 'history',
 });
