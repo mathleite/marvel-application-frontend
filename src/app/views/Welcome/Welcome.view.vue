@@ -5,9 +5,7 @@
     <welcome-gifs/>
 
     <v-container class="mt-10">
-      <span>Projeto criado para a materia de Engenharia de Software</span>
-      <br/>
-      <span>O Giuliano vai por alguma coisa aqui porque eu não sei o que dizer!</span>
+      <welcome-app-description/>
 
       <div class="mt-10">
         <v-btn
@@ -25,11 +23,13 @@ import { CHARACTERS_ROUTE } from '../Characters/Characters.route';
 import RouterMixin from '../../mixins/RouterMixin';
 
 import WelcomeGifs from '../../components/Welcome/WelcomeGifs.vue';
+import WelcomeAppDescription from '../../components/Welcome/WelcomeAppDescription.vue';
 
 export default {
   name: 'Welcome',
   components: {
     WelcomeGifs,
+    WelcomeAppDescription,
   },
   mixins: [RouterMixin],
   computed: {
