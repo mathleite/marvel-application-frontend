@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import BaseHeader from '../Base/BaseHeader.vue';
+import BaseHeader from '../../Base/components/BaseHeader.vue';
 
 export default {
   name: 'UserProfileHeader',

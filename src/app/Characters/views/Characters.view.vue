@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import UserProfileHeader from '../../components/User/UserProfileHeader.vue';
+import UserProfileHeader from '../../User/components/UserProfileHeader.vue';
 
 export default {
   name: 'Characters',
