@@ -1,4 +1,4 @@
-import CharactersView from './Characters.view.vue';
+import CharactersView from '../views/Characters.view.vue';
 
 export const CHARACTERS_ROUTE = '/personagens';
 

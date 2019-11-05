@@ -18,12 +18,12 @@
 </template>
 
 <script>
-import { CHARACTERS_ROUTE } from '../Characters/Characters.route';
+import { CHARACTERS_ROUTE } from '../../Characters/routes/Characters.route';
 
 import RouterMixin from '../../mixins/RouterMixin';
 
-import WelcomeGifs from '../../components/Welcome/WelcomeGifs.vue';
-import WelcomeAppDescription from '../../components/Welcome/WelcomeAppDescription.vue';
+import WelcomeGifs from '../components/WelcomeGifs.vue';
+import WelcomeAppDescription from '../components/WelcomeAppDescription.vue';
 
 export default {
   name: 'Welcome',

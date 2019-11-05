@@ -1,4 +1,4 @@
-import WelcomeView from './Welcome.view.vue';
+import WelcomeView from '../views/Welcome.view.vue';
 
 export const INITIAL_APP_ROUTE = '/';
 
