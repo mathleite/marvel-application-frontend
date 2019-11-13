@@ -3,10 +3,11 @@
     <v-img
       class="c-card__img"
       aspect-ratio="1"
-      :alt="character.name"
-      :src="`${character.thumbnail.path}.${character.thumbnail.extension}`"
+      :alt="characterName"
+      :src="imageSrc"
+      :lazy-src="imageSrc"
     >
-    <template v-slot:placeholder>
+    <template v-slot="placeholder">
       <v-layout
         fill-height
         align-center
@@ -20,7 +21,7 @@
 
     <div class="c-card__footer">
       <v-card-text>
-        <h4 class="text-no-wrap text-truncate">{{ character.name }}</h4>
+        <h4 class="text-no-wrap text-truncate">{{ characterName }}</h4>
       </v-card-text>
 
       <v-card-actions>
@@ -38,7 +39,20 @@ import CharacterModel from '../models/CharacterModel';
 export default {
   name: 'CharacterCard',
   props: {
-    character: CharacterModel,
+    character: {
+      type: CharacterModel,
+      required: true,
+    },
+  },
+  computed: {
+    imageSrc() {
+      const { thumbnail } = this.character;
+
+      return `${thumbnail.path}.${thumbnail.extension}`;
+    },
+    characterName() {
+      return this.character.name;
+    },
   },
 };
 </script>

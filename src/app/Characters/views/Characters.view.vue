@@ -7,7 +7,7 @@
 
 <script>
 import UserProfileHeader from '../../User/components/UserProfileHeader.vue';
-import CharactersGrid from '../components/CharactersGrid.vue'
+import CharactersGrid from '../components/CharactersGrid.vue';
 
 export default {
   name: 'Characters',
