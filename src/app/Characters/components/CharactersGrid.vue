@@ -1,7 +1,21 @@
 <template>
   <base-section>
     <template slot="header">
-      <h1 class="mt-2 mb-4">Personagens Marvel</h1>
+      <v-container>
+        <v-layout class="column align-center justify-space-around">
+          <h1 class="mb-4">Personagens Marvel</h1>
+          <v-btn-toggle
+            mandatory
+          >
+            <v-btn>
+              Todos
+            </v-btn>
+            <v-btn>
+              Favoritos
+            </v-btn>
+          </v-btn-toggle>
+        </v-layout>
+      </v-container>
     </template>
     <template slot="content">
       <v-container grid-list-lg>
